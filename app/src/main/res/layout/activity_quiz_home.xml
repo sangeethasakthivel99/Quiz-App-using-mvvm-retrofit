@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizHomeActivity">
+
+    <TextView
+        android:id="@+id/tv_category_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+        android:text="@string/select_category"
+        android:textColor="#673AB7"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ll_gk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_gk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8562C3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ll_animals"
+        app:layout_constraintBottom_toTopOf="@+id/ll_sports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_category_label">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_gk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/general"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/amaranth"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8562C3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ll_movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_gk">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_sports" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sports"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_animals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8562C3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_movie"
+        app:layout_constraintStart_toEndOf="@+id/ll_gk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_category_label">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_animal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animals"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/amaranth"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8562C3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_sports"
+        app:layout_constraintTop_toBottomOf="@+id/ll_animals">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_movie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="name_input">Enter Your Name</string>
+    <string name="name">Name</string>
+    <string name="start">Start</string>
+    <string name="general">General</string>
+    <string name="animals">Animals</string>
+    <string name="sports">Sports</string>
+    <string name="movie">Movie</string>
+    <string name="select_category">Select Category</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="your_score">Your Score</string>
+    <string name="go_to_home">Go To Home</string>
+    <string name="total_time">Total Time</string>
+    <string name="please_wait_loading">Please Wait Loading</string>
+</resources>

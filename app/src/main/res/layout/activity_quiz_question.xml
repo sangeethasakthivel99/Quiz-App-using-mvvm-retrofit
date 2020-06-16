@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionActivity">
+
+    <ScrollView
+        android:id="@+id/sv_question_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Chronometer
+            android:id="@+id/chronometer_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#151414"
+            android:textSize="22sp"
+            tools:text="1. What is your name? what so special ?" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_progress_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#151414"
+                android:textSize="14sp"
+                tools:text="0/10" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_option"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Anitha" />
+
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_option"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Hema" />
+
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_option"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Priya" />
+
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_option"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="18sp"
+            tools:text="Swetha" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="#E68E61DF"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/next"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/ic_loading"
+        android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_wait_loading"
+            android:textColor="#9C27B0"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:fontFamily="@font/amaranth" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</LinearLayout>
