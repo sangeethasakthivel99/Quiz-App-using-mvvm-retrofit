@@ -38,5 +38,6 @@ class ScoreActivity : AppCompatActivity() {
     private fun navigateToQuizHomeActivity() {
         val intent = Intent(this, QuizHomeActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }
